@@ -11,3 +11,10 @@ docker build . -t yinzhenyu87/nginx:latest
 ```bash
 docker push yinzhenyu87/nginx:latest
 ```
+
+## buildx platform
+```bash
+docker buildx build \
+--push \
+--platform linux/arm/v7,linux/arm64/v8,linux/amd64 \ --tag yinzhenyu87/nginx:latest .
+```
