@@ -9,6 +9,8 @@ docker build . -t yinzhenyu87/nginx:latest
 ```
 ## push image to hub.docker.com
 ```bash
+docker login
+docker tag image_id yinzhenyu87/nginx:latest
 docker push yinzhenyu87/nginx:latest
 ```
 
